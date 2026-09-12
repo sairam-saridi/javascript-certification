@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+min-height: 100vh;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #1f5c3a, #4a9b68);
+padding: 30px 15px;
+color: #123b2a;
+}
+
+.app {
+max-width: 850px;
+margin: 0 auto;
+}
+
+h1 {
+text-align: center;
+color: #e5f2e9;
+font-size: 45px;
+margin-bottom: 8px;
+}
+
+.subtitle {
+text-align: center;
+color: #b7dcc4;
+margin-bottom: 25px;
+font-size: 18px;
+}
+
+.controlPanel {
+background: #b7dcc4;
+padding: 20px;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+margin-bottom: 20px;
+}
+
+label {
+font-size: 18px;
+font-weight: bold;
+}
+
+select,
+button {
+height: 40px;
+font-size: 16px;
+border-radius: 8px;
+}
+
+select {
+min-width: 180px;
+padding: 0 10px;
+border: 1px solid #123b2a;
+background: white;
+}
+
+button {
+padding: 0 20px;
+border: none;
+background: #123b2a;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.85;
+}
+
+.displayWeather {
+background: white;
+min-height: 350px;
+border-radius: 18px;
+padding: 30px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.weather-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#location {
+font-size: 32px;
+margin-bottom: 8px;
+}
+
+#weather-main {
+color: #2e7d4f;
+font-size: 18px;
+text-transform: capitalize;
+}
+
+#weather-icon {
+width: 100px;
+height: 100px;
+}
+
+.temperature-section {
+margin: 20px 0;
+}
+
+#main-temperature {
+font-size: 45px;
+font-weight: bold;
+}
+
+#feels-like {
+margin-top: 8px;
+color: #657276;
+font-size: 17px;
+}
+
+.weather-details {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+margin-top: 25px;
+}
+
+.detail {
+background: #e5f2e9;
+padding: 20px;
+border-radius: 12px;
+text-align: center;
+}
+
+.detail span {
+display: block;
+color: #657276;
+margin-bottom: 8px;
+}
+
+.detail strong {
+font-size: 18px;
+}
+
+@media (max-width: 650px) {
+.controlPanel {
+flex-direction: column;
+}
+
+label,
+select,
+button {
+width: 100%;
+}
+
+.weather-details {
+grid-template-columns: 1fr;
+}
+
+#location {
+font-size: 25px;
+}
+
+#main-temperature {
+font-size: 38px;
+}
+}
