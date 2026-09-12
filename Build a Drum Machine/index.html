@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="the best and the most frequent used pulse drum machine which  plays the music"/>
+  <title>Pulse Drum Machine</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="drum-machine">
+     <div class="header">
+      <div>
+        <p class="eyebrow">Rhythm Lab</p>
+        <h1>Pulse Drum Machine</h1>
+      </div>
+
+      <p id="display">Ready to play</p>
+    </div>
+    <div id="pad-bank">
+      <button class="drum-pad" id="heater-1" data-sound="Heater-1">Q
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-1.mp3" id="Q">
+      </button>
+      <button class="drum-pad" id="heater-2" data-sound="Heater-2">W
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-2.mp3" id="W">
+      </button>
+
+      <button class="drum-pad" id="heater-3" data-sound="Heater-3">E
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-3.mp3" id="E">
+      </button>
+
+      <button class="drum-pad" id="heater-4" data-sound="Heater-4">A
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-4_1.mp3" id="A">
+      </button>
+
+      <button class="drum-pad" id="clap" data-sound="clap">S
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-6.mp3" id="S">
+      </button>
+
+      <button class="drum-pad" id="open-hh" data-sound="Open HH">D
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Dsc_Oh.mp3" id="D">
+      </button>
+
+      <button class="drum-pad" id="kick-n-hat" data-sound="Kick n' Hat">Z
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Kick_n_Hat.mp3" id="Z">
+      </button>
+
+      <button class="drum-pad" id="kick" data-sound="kick">X
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/RP4_KICK_1.mp3" id="X">
+      </button>
+
+      <button class="drum-pad" id="closed-hh" data-sound="Closed HH">C
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Cev_H2.mp3" id="C">
+      </button>
+
+    </div>
+     <div class="footer">
+      Click a pad or use Q W E / A S D / Z X C
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
